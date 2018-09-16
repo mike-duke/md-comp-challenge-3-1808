@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,52 +9,113 @@
   <link rel="stylesheet" href="styles.css">
   <title>Newton Barley</title>
 </head>
+
 <body>
   <aside>
-    <img class="img-profile" src="">
-    <a class="anchor-name" href="#">Newton Barley</a><img class="dropdown">
+    <!-- <div class="profile" aria-label="profile picture and username with dropdown menu"> -->
+    <figure>
+      <div class="img-profile" aria-label="profile image set by user"></div>
+      </div>
+      <div class="username-and-dropdown">
+        <p>Newton Barley</p>
+        <div class="dropdown"></div>
+    </figure>
+    <!-- </div> -->
     <hr>
     <ul>Main
-      <li><img src="house">Home</li>
-      <li><img src="toolbox">Jobs</li>
-      <li><img src="papers">Resumes</li>
-      <li><img src="clipboard" alt="">Tasks</li>
-      <li><img src="calendar" alt="">Calendar</li>
+      <li>
+        <img src="images/home.svg">Home</li>
+      <li>
+        <img src="images/briefcase.svg">Jobs</li>
+      <li>
+        <img src="images/file.svg">Resumes</li>
+      <li>
+        <img src="images/shopping-list.svg" alt="">Tasks</li>
+      <li>
+        <img src="images/calendar.svg" alt="">Calendar</li>
     </ul>
     <hr>
     <ul>Admin
-      <li><img src="users" alt="">Users</li>
-      <li><img src="gps" alt="">Locations</li>
-      <li><img src="org-chart" alt="">Workflows</li>
-      <li><img src="postings" alt="">JobBoards</li>
-      <li><img src="social" alt="">Social</li>
+      <li>
+        <img src="images/users.svg" alt="">Users</li>
+      <li>
+        <img src="images/location-pointer.svg" alt="">Locations</li>
+      <li>
+        <img src="images/organization-chart.svg" alt="">Workflows</li>
+      <li>
+        <img src="images/text-documents.svg" alt="">JobBoards</li>
+      <li>
+        <img src="images/share.svg" alt="">Social</li>
     </ul>
     <hr>
     <ul>Categories
-      <li><input type="checkbox" name="Administrative"></li>
-      <li><input type="checkbox" name="Design"></li>
-      <li><input type="checkbox" name="Executive"></li>
-      <li><input type="checkbox" name="Human Resources"></li>
+      <li>
+        <label for="administrative">
+          <input type="checkbox" id="administrative"> Administrative
+        </label>
+      </li>
+      <li>
+        <label for="design">
+          <input type="checkbox" id="design"> Design
+        </label>
+      </li>
+      <li>
+        <label for="executive">
+          <input type="checkbox" id="executive"> Executive
+        </label>
+      </li>
+      <li>
+        <label for="humnan-resources">
+          <input type="checkbox" id="human-resources"> Human Resources
+        </label>
+      </li>
     </ul>
   </aside>
   <header>
     <section class="search-bar">
-      <button class="aside-button"><img src="hamburger"></button>
-      <input class="search-input" type="search">
-      <button class="add-user"><img src="person-plus" alt=""></button>
-      <button class="calendar-button"><img src="calendar-button" alt=""></button>
-      <button class="layout"><img src="grid-squares" alt=""></button>
+      <button class="aside-button">
+        <img src="images/menu-button.svg">
+      </button>
+      <div class="search-input">
+        <img class="magnifier" src="images/magnifying-glass.svg">
+        <input class="search-input-field" type="search" placeholder="Search for a job, task, or resume">
+      </div>
+      <!-- <div class="add-user"> -->
+      <button class="add-user-button">
+        <img src="images/add-user.svg" alt="">
+      </button>
+      <!-- </div> -->
+      <!-- <div class="schedule"> -->
+      <button class="schedule-button">
+        <img src="images/add-event.svg" alt="">
+      </button>
+      <!-- </div> -->
+      <!-- <div class="layout"> -->
+      <button class="layout-button">
+        <img src="images/grid-squares.svg" alt="">
+      </button>
+      <!-- </div> -->
     </section>
     <section class="job-posting">
-      <h2>Customer Service Representative</h2>
-      <article class="job-posting-buttons">
-        <button class="open"><img src="green-dot" alt="">OPEN</button>
-        <button class="bookmark"><img src="bookmark" alt=""></button>
-        <button class="edit"><img src="pencil" alt=""></button>
-        <button class="trash"><img src="trash-can" alt=""></button>
-      </article>
+      <div class="job-posting-row">
+        <h2>Customer Service Representative</h2>
+        <article class="job-posting-buttons">
+          <button id="open">
+            <img src="green-dot" alt="">OPEN</button>
+          <button class="bookmark">
+            <img src="bookmark" alt="">
+          </button>
+          <button class="edit">
+            <img src="pencil" alt="">
+          </button>
+          <button class="trash">
+            <img src="trash-can" alt="">
+          </button>
+        </article>
+      </div>
       <article class="location-and-preview">
-        <h4 class="job-posting-location"><img src="gps" alt="">San Francisco, CA ·</h4>
+        <h4 class="job-posting-location">
+          <img src="images/location-pointer.svg" alt="">San Francisco, CA ·</h4>
         <a href="#">Preview this post</a>
       </article>
       <ul class="job-links">
@@ -76,68 +138,91 @@
         <img class="bar-graph-img">
         <button class="applicants-per-day">APPLICANTS/DAY</button>
       </article>
-      <hr><button class="graphs-slideup"><img src="chevron" alt=""></button><hr>
+      <div class="slide-up">
+        <hr class="slide-up-left">
+        <div class="graphs-slideup">
+          <button class="graphs-slideup-button">
+            <img src="chevron" alt="">
+          </button>
+        </div>
+        <hr class="slide-up-right">
+      </div>
     </section>
     <section class="job-info">
       <article class="job-description-block">
-        <p class="job description">JOB DESCRIPTION<button class="edit-button">EDIT</button></p>
+        <div class="job-description">
+          <p class="job-description-title">JOB DESCRIPTION</p>
+          <button class="edit-button">
+            <img src="images/pencil-edit-button.svg">EDIT</button>
+        </div>
         <dl>
           <dt class="position-title">POSITION TITLE</dt>
-            <dd>Customer Service Representative</dd>
+          <dd>Customer Service Representative</dd>
           <hr>
           <dt class="job-info-location">LOCATION</dt>
-            <dd>San Francisco, CA</dd>
+          <dd>San Francisco, CA</dd>
           <hr>
           <dt class="employment-type">EMPLOYMENT TYPE</dt>
-            <dd>Full-Time</dd>
+          <dd>Full-Time</dd>
           <hr>
           <dt class="experience">EXPERIENCE</dt>
-            <dd>Mid-level</dd>
+          <dd>Mid-level</dd>
           <hr>
           <dt class="status">STATUS</dt>
-            <dd>Open</dd>
+          <dd>Open</dd>
           <hr>
           <dt class="description">DESCRIPTION</dt>
-            <dd>The Customer Service Representative is responsible for interacting with and providing quality assistance to all radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce customer service wait times while doing a back handspring and eating a ham sandwich</dd>
+          <dd>The Customer Service Representative is responsible for interacting with and providing quality assistance to all
+            radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce
+            customer service wait times while doing a back handspring and eating a ham sandwich</dd>
           <hr>
           <dt class="hiring-lead">HIRING LEAD</dt>
-            <dd><img src="tom-t" alt="" class="small-profile">Tom Tizzy</dd>
+          <dd>
+            <img src="tom-t" alt="" class="small-profile">Tom Tizzy</dd>
           <hr>
           <dt class="approved-salary">APPROVED SALARY</dt>
-            <dd>$58,000</dd>
-          </dl>
-        </article>
-        <article class="social-buttons-and-inputs">
-          <button class="facebook"><img src="facebook">Post to Facebook</button>
-          <button class="twitter"><img src="twitter" alt="">Tweet this Job</button>
-          <button class="linkedin"><img src="linkedin" alt="">Post to Linkedin</button>
-          <p class="link-to-this-job">
-            <img src="globe" alt=""><h3>Link to this Job</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere, nisl non rhoncus posuere, mi dolor egestas metus, nec accumsan nulla diam in erat.</p>
+          <dd>$58,000</dd>
+        </dl>
+      </article>
+      <article class="social-buttons-and-inputs">
+        <button class="social-button facebook">
+          <img src="facebook">Post to Facebook</button>
+        <button class="social-button twitter">
+          <img src="twitter" alt="">Tweet this Job</button>
+        <button class="social-button linkedin">
+          <img src="linkedin" alt="">Post to Linkedin</button>
+        <div class="inputs-area">
+          <div class="link-to-this-job">
+            <img src="globe" alt="">
+            <h3>Link to this Job</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere, nisl non rhoncus posuere, mi dolor egestas
+              metus, nec accumsan nulla diam in erat.</p>
             <div class="link-to-copy">
-              http://Loremipsum.dol/or sit amet.com
-              <button>Copy</button>
+              <span>http://Loremipsum.dol/or sit amet.com</span>
             </div>
-          </p>
-          <p class="button-widget">
+            <button class="copy-button">Copy</button>
+          </div>
+          <div class="button-widget">
             <img src="page" alt="">
             <h3>Use the Button Widget</h3>
             <p>This widget embeds the buttons for sharing the job for submitting a resume on your website</p>
             <div class="code-to-copy">
-              [some JS code]
-              <button>Copy</button>
+              <span>[some JS code]</span>
             </div>
-          </p>
+            <button class="copy-button">Copy</button>
+          </div>
           <div class="resumes-by-email">
             <img src="paper-airplane" alt="">
             <h3>Upload Resumes by Email</h3>
             <p>You can automatically upload multiple resumes to this job by emailing the address below</p>
             <div class="tim-email">
-              tomtizzy@gmail.com
+              <span>tomtizzy@gmail.com</span>
             </div>
           </div>
-        </article>
+        </div>
+      </article>
     </section>
   </main>
 </body>
+
 </html>
