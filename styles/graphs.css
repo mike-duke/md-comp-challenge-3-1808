@@ -1,0 +1,139 @@
+.graphs {
+  margin-top: 5%;
+}
+
+.bar-and-circle-graphs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 5%;
+}
+
+.stat-name {
+  font-size: 0.2rem;
+  font-weight: bold;
+  fill: #939393;
+  /* display: block; */
+}
+
+.circle-graphs button,
+.bar-graph button {
+  height: 15%;
+  width: 25%;
+  background: #FFF;
+  font-size: 0.7rem;
+  border-radius: 25px;
+  padding: 0;
+  color: #717d93;
+  border: 1px solid #c4ccd2;
+}
+
+#totals {
+  align-self: center;
+  width: 35%;
+  margin-top: 10%;
+}
+
+#applicants-per-day {
+  padding: 10px;
+  margin-top: 5%;
+}
+
+.circle-graphs {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  background: #edf2f6;
+}
+
+.bar-graph {
+  width: 45%;
+  display: flex;
+  background: #edf2f6;
+  flex-direction: column;
+  align-items: center;  
+}
+
+.bar-graph img {
+  width: 75%;
+}
+/* circle graph styles taken from Medium article "How to code a responsive circular percentage chart with SVG and CSS." */
+
+.flex-wrapper {
+  display: flex;
+  flex-flow: row nowrap;
+}
+
+.single-chart {
+  width: 33%;
+  justify-content: space-around ;
+}
+
+.circular-chart {
+  display: block;
+  margin: 10px auto;
+  max-width: 80%;
+  max-height: 250px;
+}
+
+.circle-bg {
+  fill: none;
+  stroke: #dae3ea;
+  stroke-width: 3.8;
+}
+
+.circle {
+  fill: none;
+  stroke-width: 2.8;
+  stroke-linecap: round;
+  animation: progress 1s ease-out forwards;
+}
+
+@keyframes progress {
+  0% {
+    stroke-dasharray: 0 100;
+  }
+}
+
+.circular-chart.orange .circle {
+  stroke: #67b8bf;
+}
+
+.circular-chart.green .circle {
+  stroke: #47a4f3;
+}
+
+.circular-chart.blue .circle {
+  stroke: #a46eab;
+}
+
+.stat {
+  fill: #666;
+  font-family: sans-serif;
+  font-size: 0.5em;
+  text-anchor: middle;
+}
+
+/* slide-up button styles*/
+.slide-up {
+  width: 100%;
+  display: flex;
+}
+
+.slide-up hr {
+  width: 46%;
+}
+
+.slide-up-left {
+  float: left;
+}
+
+.slide-up-right {
+  float: right;
+}
+
+.graphs-slideup {
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
