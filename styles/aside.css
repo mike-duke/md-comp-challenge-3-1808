@@ -54,13 +54,30 @@ aside figure {
 aside ul {
   color: #616d84;
   text-align: left;
-  margin: 0;
-  padding: 10%;
+  margin: 12% 0;
+  padding: 0;
+}
+
+aside ul span {
+  margin: 0 12%;
 }
 
 aside li {
   color: #7c8799;
-  margin: 5%;
+  margin: 0;
+  padding: 10% 0 10% 12%;
+  border-left: 3px solid #354052;
+  display: flex;  
+  align-items: center;
+  font-weight: bold;
+}
+
+aside li:hover, 
+aside .active {
+  background: #2C3340;
+  color: white;
+  border-left: 3px solid #47a4f3;
+  cursor: pointer;
 }
 
 aside li img {
@@ -69,18 +86,31 @@ aside li img {
   margin-right: 15px;
 }
 
+input[type='checkbox'] {
+  margin-right: 12%;
+}
+
+aside label {
+  width: 100%;
+}
+
+aside label:hover {
+  cursor: pointer;
+}
+
 .dropdown {
   height: 10px;
   width: 10px;
-  background: url(images/arrow-down-gray.svg);
+  background: url(../images/arrow-down-gray.svg);
   background-size: cover;
 }
 
 .username-and-dropdown:hover {
   color: #FFF;
+  cursor: pointer;
 }
 
-.dropdown:hover {
-  background: url(images/arrow-down-white.svg);
+.username-and-dropdown:hover .dropdown {
+  background: url(../images/arrow-down-white.svg);
   background-size: cover;
 }
