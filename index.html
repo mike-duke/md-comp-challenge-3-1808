@@ -26,7 +26,8 @@
     </figure>
     <!-- </div> -->
     <hr>
-    <ul>Main
+    <ul>
+      <span>Main</span>
       <li>
         <img src="images/home.svg">Home</li>
       <li>
@@ -39,63 +40,63 @@
         <img src="images/calendar.svg" alt="">Calendar</li>
     </ul>
     <hr>
-    <ul>Admin
+    <ul>
+      <span>Admin</span>
       <li>
         <img src="images/users.svg" alt="">Users</li>
       <li>
         <img src="images/location-pointer.svg" alt="">Locations</li>
       <li>
         <img src="images/organization-chart.svg" alt="">Workflows</li>
-      <li>
+      <li class="active">
         <img src="images/text-documents.svg" alt="">JobBoards</li>
       <li>
         <img src="images/share.svg" alt="">Social</li>
     </ul>
     <hr>
-    <ul>Categories
+    <ul>
+      <span>Categories</span>
       <li>
-        <label for="administrative">
-          <input type="checkbox" id="administrative"> Administrative
+        <label class="checkbox-label" for="administrative">
+          <input type="checkbox" id="administrative">Administrative
         </label>
       </li>
       <li>
         <label for="design">
-          <input type="checkbox" id="design"> Design
+          <input type="checkbox" id="design">Design
         </label>
       </li>
       <li>
         <label for="executive">
-          <input type="checkbox" id="executive"> Executive
+          <input type="checkbox" id="executive">Executive
         </label>
       </li>
       <li>
         <label for="humnan-resources">
-          <input type="checkbox" id="human-resources"> Human Resources
+          <input type="checkbox" id="human-resources">Human Resources
         </label>
       </li>
     </ul>
   </aside>
   <header>
     <section class="search-bar">
-      <button class="aside-button">
-        <img src="images/menu-button.svg">
+      <button class="header-button" id="aside-button">
       </button>
       <div class="search-input">
         <img class="magnifier" src="images/magnifying-glass.svg">
         <input class="search-input-field" type="search" placeholder="Search for a job, task, or resume">
       </div>
       <!-- <div class="add-user"> -->
-      <button class="add-user-button">
-        <img src="images/add-user.svg" alt="">
+      <button class="header-button active" id="add-user-button">
       </button>
       <!-- </div> -->
       <!-- <div class="schedule"> -->
-      <button class="schedule-button">
+      <button class="header-button schedule-button">
         <img src="images/add-event.svg" alt="">
       </button>
       <!-- </div> -->
       <!-- <div class="layout"> -->
-      <button class="layout-button">
+      <button class="header-button layout-button">
         <img src="images/grid-squares.svg" alt="">
       </button>
       <!-- </div> -->
@@ -105,25 +106,25 @@
         <h2>Customer Service Representative</h2>
         <article class="job-posting-buttons">
           <button id="open">
-            <img src="green-dot" alt="">OPEN</button>
+            <div id="green-dot"></div>OPEN</button>
           <button class="bookmark">
-            <img src="bookmark" alt="">
+            <img src="images/bookmark.svg" alt="">
           </button>
           <button class="edit">
-            <img src="pencil" alt="">
+            <img src="images/pencil-edit-button.svg" alt="">
           </button>
           <button class="trash">
-            <img src="trash-can" alt="">
+            <img src="images/waste-bin.svg" alt="">
           </button>
         </article>
       </div>
       <article class="location-and-preview">
         <h4 class="job-posting-location">
           <img src="images/location-pointer.svg" alt="">San Francisco, CA ·</h4>
-        <a href="#">Preview this post</a>
+        <a class="preview" href="#">Preview this post</a>
       </article>
       <ul class="job-links">
-        <li class="job-posting-link">SUMMARY</li>
+        <li class="job-posting-link active">SUMMARY</li>
         <li class="job-posting-link">APPLICANTS</li>
         <li class="job-posting-link">JOB BOARD</li>
         <li class="job-posting-link">INTERVIEWS</li>
@@ -176,9 +177,9 @@
                 <text x="28%" y="62%" class="stat-name">FORWARDS</text>
               </svg>
             </div>
-          
+
           </div>
-          
+
           <button id="totals">TOTALS · Out of 5,231 interviews</button>
         </article>
         <article class="bar-graph">
@@ -187,13 +188,13 @@
         </article>
       </div>
       <div class="slide-up">
-        <hr class="slide-up-left">
+        <hr id="slide-up-left">
         <div class="graphs-slideup">
           <button class="graphs-slideup-button">
-            <img src="chevron" alt="">
+            <img src="images/up-arrow.svg" alt="">
           </button>
         </div>
-        <hr class="slide-up-right">
+        <hr id="slide-up-right">
       </div>
     </section>
     <section class="job-info">
@@ -201,35 +202,28 @@
         <div class="job-description">
           <p class="job-description-title">JOB DESCRIPTION</p>
           <button class="edit-button">
-            <img src="images/pencil-edit-button.svg">EDIT</button>
+            <img src="images/pencil-edit-button-white.svg">EDIT</button>
         </div>
         <dl>
           <dt class="position-title">POSITION TITLE</dt>
           <dd>Customer Service Representative</dd>
-          <hr>
           <dt class="job-info-location">LOCATION</dt>
           <dd>San Francisco, CA</dd>
-          <hr>
           <dt class="employment-type">EMPLOYMENT TYPE</dt>
           <dd>Full-Time</dd>
-          <hr>
           <dt class="experience">EXPERIENCE</dt>
           <dd>Mid-level</dd>
-          <hr>
           <dt class="status">STATUS</dt>
           <dd>Open</dd>
-          <hr>
           <dt class="description">DESCRIPTION</dt>
           <dd>The Customer Service Representative is responsible for interacting with and providing quality assistance to all
             radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce
             customer service wait times while doing a back handspring and eating a ham sandwich</dd>
-          <hr>
           <dt class="hiring-lead">HIRING LEAD</dt>
           <dd>
             <img src="tom-t" alt="" class="small-profile">Tom Tizzy</dd>
-          <hr>
-          <dt class="approved-salary">APPROVED SALARY</dt>
-          <dd>$58,000</dd>
+          <dt id="approved-salary">APPROVED SALARY</dt>
+          <dd id="approved-salary-definition">$58,000</dd>
         </dl>
       </article>
       <article class="social-buttons-and-inputs">
@@ -241,29 +235,39 @@
           <img src="images/linkedin.svg" alt="">Post to Linkedin</button>
         <div class="inputs-area">
           <div class="link-to-this-job">
-            <img src="images/world.svg" alt="">
-            <h3>Link to this Job</h3>
+            <div class="inputs-area-title">
+              <img src="images/world.svg" alt="">
+              <h3>Link to this Job</h3>
+            </div>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec posuere, nisl non rhoncus posuere, mi dolor egestas
               metus, nec accumsan nulla diam in erat.</p>
-            <div class="link-to-copy">
-              <span>http://Loremipsum.dol/or sit amet.com</span>
+            <div class="link-or-code-with-button">
+              <div class="link-to-copy">
+                <span>http://Loremipsum.dol/or sit amet.com</span>
+              </div>
+              <button class="copy-button">Copy</button>
             </div>
-            <button class="copy-button">Copy</button>
           </div>
           <hr>
           <div class="button-widget">
-            <img src="images/add-web-page.svg" alt="">
-            <h3>Use the Button Widget</h3>
-            <p>This widget embeds the buttons for sharing the job for submitting a resume on your website</p>
-            <div class="code-to-copy">
-              <span>[some JS code]</span>
+            <div class="inputs-area-title">
+              <img src="images/add-web-page.svg" alt="">
+              <h3>Use the Button Widget</h3>
             </div>
-            <button class="copy-button">Copy</button>
+            <p>This widget embeds the buttons for sharing the job for submitting a resume on your website</p>
+            <div class="link-or-code-with-button">
+              <div class="code-to-copy">
+                <span>[some JS code]</span>
+              </div>
+              <button class="copy-button">Copy</button>
+            </div>
           </div>
           <hr>
           <div class="resumes-by-email">
-            <img src="images/paper-plane.svg" alt="">
-            <h3>Upload Resumes by Email</h3>
+            <div class="inputs-area-title">
+              <img src="images/paper-plane.svg" alt="">
+              <h3>Upload Resumes by Email</h3>
+            </div>
             <p>You can automatically upload multiple resumes to this job by emailing the address below</p>
             <div class="tim-email">
               <span>tomtizzy@gmail.com</span>

@@ -38,6 +38,11 @@
   margin-top: 5%;
 }
 
+#totals:hover,
+#applicants-per-day:hover {
+  background: #dbe4ea;
+}
+
 .circle-graphs {
   width: 50%;
   display: flex;
@@ -56,8 +61,8 @@
 .bar-graph img {
   width: 75%;
 }
-/* circle graph styles taken from Medium article "How to code a responsive circular percentage chart with SVG and CSS." */
 
+/* circle graph styles taken from Medium article "How to code a responsive circular percentage chart with SVG and CSS." */
 .flex-wrapper {
   display: flex;
   flex-flow: row nowrap;
@@ -120,20 +125,43 @@
 }
 
 .slide-up hr {
-  width: 46%;
+  width: 42%;
+  display: flex;
+  align-items: center;
+  margin: 1.5% 0;
 }
 
-.slide-up-left {
-  float: left;
+#slide-up-left {
+  /* justify-self: flex-end; */
+  margin-left: 5%;
 }
 
-.slide-up-right {
-  float: right;
+#slide-up-right {
+  justify-self: flex-start;
 }
 
 .graphs-slideup {
   width: 50px;
+  height: 50px;
   display: flex;
   justify-content: center;
-  margin: 0;
+  align-items: flex-start;
+  margin: 0 0 5% 0;
+}
+
+.graphs-slideup-button {
+  height: 30px;
+  width: 30px;
+  background: #FFF;
+  padding: 0;
+  border-radius: 50%;
+}
+
+.graphs-slideup-button:hover {
+  background: #dbe4ea;
+}
+
+.graphs-slideup-button img {
+  height: 10px;
+  width: 10px
 }
