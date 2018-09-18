@@ -3,32 +3,31 @@ header {
 }
 
 .search-bar {
+  display: flex;
   width: 100%;
   background: #FFF;
-  display: flex;
 }
 
 .search-input {
-  display: inline-block;
-  width: 77%;
+  align-items: center;
   border-right: 1px solid #c4ccd2;
   border-bottom: 2px solid #c4ccd2;
   border-left: 1px solid #c4ccd2;
-  align-items: center;
   display: flex;
+  width: 77%;
 }
 
 .magnifier {
   height: 20px;
-  width: 20px;
   margin: 0 1%;
+  width: 20px;
 }
 
 .search-input-field {
-  width: 97%;
-  height: 100%;
   border: none;
+  height: 100%;
   padding: 2% 0;
+  width: 97%;
   font-size: 1.5rem;
 }
 
@@ -53,62 +52,62 @@ header {
 
 #aside-button {
   background: url(../images/menu-button.svg);
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 #aside-button:hover {
   background: url(../images/menu-button-white.svg);
   background-color: #47a4f3;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 #add-user-button {
   background: url(../images/add-user.svg);
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 #add-user-button:hover, #add-user-button .active {
   background: url(../images/add-user-white.svg);
   background-color: #47a4f3;
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 #schedule-button {
   background: url(../images/add-event.svg);
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 #schedule-button:hover {
   background: url(../images/add-event-white.svg);
   background-color: #47a4f3;  
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 #layout-button {
   background: url(../images/grid-squares.svg);
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 #layout-button:hover {
   background: url(../images/grid-squares-white.svg);
   background-color: #47a4f3;  
-  background-size: 20px 20px;
-  background-repeat: no-repeat;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
 }
 
 .header-button img{
@@ -121,21 +120,21 @@ header {
 }
 
 .job-posting h2 {
-  width: 100%;
   display: inline-block;
-  font-weight: normal;
   margin: 0;
-  font-size: 1.8rem;
+  width: 100%;
   color: #939393;
+  font-size: 1.8rem;
+  font-weight: normal;
 }
 
 .job-posting button {
-  background: #FFF;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  padding: 0 8px;
   border: 2px solid #c4ccd2;
+  border-radius: 50%;
+  height: 40px;
+  padding: 0 8px;
+  width: 40px;
+  background: #FFF;
 }
 
 .job-posting button:hover {
@@ -149,20 +148,20 @@ header {
 
 #open {
   border-radius: 25px;
+  color: #9ca3ae;
+  display: flex;
+  padding: 4%;
   width: 80px;
   font-size: 0.8rem;
-  color: #9ca3ae;
-  padding: 4%;
-  display: flex;
 }
 
 #green-dot {
-  height: 10px;
-  width: 10px;
   border-radius: 50%;
-  background: #99c354;
   display: inline-block;
+  height: 10px;
   margin: 1% 6% 0 12%;
+  width: 10px;
+  background: #99c354;
 }
 
 .job-posting-row {
@@ -172,21 +171,22 @@ header {
 
 .job-posting-buttons {
   display: flex;
+  justify-content: space-around;
   margin-right: 5%;
   width: 350px;
-  justify-content: space-around;
 }
 
 .location-and-preview {
-  display: flex;
   align-items: flex-start;
+  display: flex;
   margin: 0 0 3% 5%;  
 }
 
 .job-posting-location {
+  display: flex;
   font-weight: normal;
   margin: 0;
-  display: flex;
+  color: #939393;
 }
 
 .job-posting-location img {
@@ -196,8 +196,8 @@ header {
 
 .preview {
   margin-left: 0.5%;
-  color: #47a4f3;
   text-decoration: none; 
+  color: #47a4f3;
 }
 
 .job-links {
@@ -207,12 +207,12 @@ header {
 }
 
 .job-posting-link {
-  padding: 3% 0;
   border-bottom: 3px solid #FFF;
   font-weight: bold;
+  margin-right: 6%;
+  padding: 3% 0;
   color: #939393;
   font-size: 0.8rem;
-  margin-right: 6%;
 }
 
 .job-posting-link:hover, .job-links .active {

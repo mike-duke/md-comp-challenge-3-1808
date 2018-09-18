@@ -48,20 +48,20 @@ main {
 }
 
 .hiring-lead {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .hiring-lead-profile {
-  display: flex;
   align-items: center;
+  display: flex;
 }
 
 .small-profile {
-  height: 40px;
-  width: 40px;
   border-radius: 50%;
+  height: 40px;
   margin: 2%;
+  width: 40px;
 }
 
 .job-description {
@@ -157,12 +157,12 @@ main {
 }
 
 .copy-button {
-  height: 40px;
-  width: 50px;
-  text-align: center;
-  padding: 0;
-  background: #67b8bf;
   border-radius: 0 5px 5px 0;
+  height: 40px;
+  padding: 0;
+  text-align: center;
+  width: 50px;
+  background: #67b8bf;
 }
 
 .copy-button:hover {
@@ -172,15 +172,15 @@ main {
 .link-to-copy,
 .code-to-copy,
 .tim-email {
-  background: #FFF;
-  height: 40px;
-  width: 83%;
-  display: flex;
-  overflow-x: scroll;
-  white-space: nowrap;
   align-items: center;
-  padding: 0 0 0 5%;
   border-radius: 5px;
+  display: flex;
+  height: 40px;
+  overflow-x: scroll;
+  padding-left: 5%;
+  white-space: nowrap;
+  width: 83%;
+  background: #FFF;
   color: #7b8392;
 }
 

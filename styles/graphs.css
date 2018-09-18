@@ -16,25 +16,25 @@
 
 .circle-graphs button,
 .bar-graph button {
+  border: 1px solid #c4ccd2;
+  border-radius: 25px;
   height: 15%;
+  padding: 0;
   width: 25%;
   background: #FFF;
-  font-size: 0.7rem;
-  border-radius: 25px;
-  padding: 0;
   color: #717d93;
-  border: 1px solid #c4ccd2;
+  font-size: 0.7rem;
 }
 
 #totals {
   align-self: center;
-  width: 35%;
   margin-top: 10%;
+  width: 35%;
 }
 
 #applicants-per-day {
-  padding: 1%;
   margin-top: 5%;
+  padding: 1%;
   width: 35%;
 }
 
@@ -44,22 +44,69 @@
 }
 
 .circle-graphs {
-  width: 55%;
   display: flex;
   flex-direction: column;
+  width: 55%;
   background: #edf2f6;
 }
 
 .bar-graph {
-  width: 45%;
-  display: flex;
-  background: #edf2f6;
-  flex-direction: column;
   align-items: center;  
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  background: #edf2f6;
 }
 
 .bar-graph img {
   width: 80%;
+}
+
+/* slide-up button styles*/
+.slide-up {
+  display: flex;
+  width: 100%;
+}
+
+.slide-up hr {
+  align-items: center;
+  display: flex;
+  margin: 1.5% 0;
+  width: 42%;
+}
+
+#slide-up-left {
+  margin-left: 5%;
+}
+
+#slide-up-right {
+  justify-self: flex-start;
+}
+
+.graphs-slideup {
+  align-items: flex-start;
+  display: flex;
+  height: 50px;
+  justify-content: center;
+  margin: 0 0 5% 0;
+  width: 50px;
+}
+
+.graphs-slideup-button {
+  border-radius: 50%;
+  height: 30px;
+  padding: 0;
+  width: 30px;
+  background: #FFF;
+}
+
+.graphs-slideup-button:hover {
+  background: #dbe4ea;
+}
+
+.graphs-slideup-button img {
+  height: 10px;
+  width: 10px
 }
 
 /* circle graph styles taken from Medium article "How to code a responsive circular percentage chart with SVG and CSS." */
@@ -116,52 +163,4 @@
   font-family: sans-serif;
   font-size: 0.5em;
   text-anchor: middle;
-}
-
-/* slide-up button styles*/
-.slide-up {
-  width: 100%;
-  display: flex;
-}
-
-.slide-up hr {
-  width: 42%;
-  display: flex;
-  align-items: center;
-  margin: 1.5% 0;
-}
-
-#slide-up-left {
-  /* justify-self: flex-end; */
-  margin-left: 5%;
-}
-
-#slide-up-right {
-  justify-self: flex-start;
-}
-
-.graphs-slideup {
-  width: 50px;
-  height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  margin: 0 0 5% 0;
-}
-
-.graphs-slideup-button {
-  height: 30px;
-  width: 30px;
-  background: #FFF;
-  padding: 0;
-  border-radius: 50%;
-}
-
-.graphs-slideup-button:hover {
-  background: #dbe4ea;
-}
-
-.graphs-slideup-button img {
-  height: 10px;
-  width: 10px
 }
