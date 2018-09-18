@@ -1,77 +1,91 @@
 main {
-  background: #edf2f6;
   grid-area: main;
+  background: #edf2f6;
 }
 
 .job-info {
   display: grid;
-
-  padding: 0 2% 2% 5%;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-areas: 
-    "job-description-block job-description-block social-buttons-and-inputs"
-    "job-description-block job-description-block social-buttons-and-inputs"
-    "job-description-block job-description-block social-buttons-and-inputs"
+  grid-template-areas: "job-description-block job-description-block social-buttons-and-inputs" "job-description-block job-description-block social-buttons-and-inputs" "job-description-block job-description-block social-buttons-and-inputs";
+  padding: 0 2% 2% 5%;
 }
 
 .job-description-block {
   grid-area: job-description-block;
+  margin: 0 3% 0 0;
   width: 100%;
   background: #FFF;
-  margin: 0 3% 0 0;
 }
 
 .job-description-block dl {
-  padding: 0 5%;
   display: grid;
   grid-template-columns: 1fr 2fr;
+  padding: 0 5%;
 }
 
 .job-description-block dt {
+  border-bottom: 2px solid #c4ccd2;
   grid-column: 1 / 2;
   margin: 0;
+  padding: 18% 0;
   width: 100%;
   color: #7d8a9f;
-  padding: 18% 0;
-  border-bottom: 2px solid #c4ccd2;
   font-weight: bold;
 }
 
 .job-description-block dd {
+  border-bottom: 2px solid #c4ccd2;
   grid-column: 2 / 3;
-  color: #7d8a9f;
   height: auto;
   margin: 0;
   padding: 9% 0;
-  border-bottom: 2px solid #c4ccd2;
+  color: #7d8a9f;
 }
 
-#approved-salary, #approved-salary-definition  {
+#approved-salary,
+#approved-salary-definition {
   border: none;
 }
 
-.job-description {
-  background: #717d93;
-  height: 10%;
+.hiring-lead {
   display: flex;
   align-items: center;
+}
+
+.hiring-lead-profile {
+  display: flex;
+  align-items: center;
+}
+
+.small-profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 2%;
+}
+
+.job-description {
+  align-items: center;
+  border-radius: 2% 2% 0 0;
+  display: flex;
+  height: 10%;
   margin: 0;
   width: 100%;
-  border-radius: 2% 2% 0 0;
+  background: #717d93;
 }
 
 .job-description-title {
-  color: #FFF;
   margin: 0 8% 0 5%;
+  color: #FFF;
 }
 
 .edit-button {
-  background: #7e8ba4;
-  color: #FFF;
+  height: 50px;
   margin: 2%;
   padding: 0;
   width: 100px;
-  height: 50px;
+  background: #7e8ba4;
+  color: #FFF;
 }
 
 .edit-button:hover {
@@ -80,8 +94,8 @@ main {
 
 .edit-button img {
   height: 15px;
-  width: 15px;
   margin: 0 5% 0 0;
+  width: 15px;
 }
 
 .social-buttons-and-inputs {
@@ -90,19 +104,19 @@ main {
 }
 
 .social-button {
-  height: 7%;
-  width: 100%;
-  margin: 5% 0;
+  align-items: center;
   border-radius: 5px;
   display: flex;
+  height: 7%;
   justify-content: center;
-  align-items: center;
+  margin: 5% 0;
+  width: 100%;
 }
 
 .social-button img {
   height: 20px;
-  width: 20px;
   margin-right: 5%;
+  width: 20px;
 }
 
 .facebook {
@@ -110,25 +124,11 @@ main {
   background: #5070bb;
 }
 
-.facebook:hover {
-  background: #738ECA
-}
-
-.twitter {
-  background: #47a8e9;
-}
-
-.twitter:hover {
-  background: #6CBBED
-}
-
-.linkedin {
-  background: #337eb6;
-}
-
-.linkedin:hover {
-  background: #5C99C6
-}
+.facebook:hover { background: #738ECA; }
+.twitter { background: #47a8e9; }
+.twitter:hover { background: #6CBBED; }
+.linkedin { background: #337eb6; }
+.linkedin:hover { background: #5C99C6; }
 
 .inputs-area img {
   height: 25px;
@@ -147,20 +147,13 @@ main {
   align-items: center;
 }
 
-.inputs-area p {
-  color: #7b8392
-}
-
-.inputs-area hr {
-  margin: 12% 0;
-}
-
-.link-to-this-job {
-  margin-top: 10%;
-}
+.inputs-area p { color: #7b8392; }
+.inputs-area hr { margin: 12% 0; }
+.link-to-this-job { margin-top: 10%; }
 
 .link-or-code-with-button {
   display: flex;
+  box-shadow: 0 1px 2px #dbe0e3;
 }
 
 .copy-button {
@@ -172,18 +165,23 @@ main {
   border-radius: 0 5px 5px 0;
 }
 
+.copy-button:hover {
+  background: #85C6CB;
+}
+
 .link-to-copy,
 .code-to-copy,
 .tim-email {
   background: #FFF;
   height: 40px;
   width: 83%;
-  display: flex;  
+  display: flex;
   overflow-x: scroll;
   white-space: nowrap;
   align-items: center;
   padding: 0 0 0 5%;
   border-radius: 5px;
+  color: #7b8392;
 }
 
 .tim-email {
@@ -193,10 +191,10 @@ main {
 .link-to-copy span,
 .code-to-copy span,
 .tim-email span {
-  width: 66%; 
+  width: 66%;
 }
 
 .link-to-copy button,
 .code-to-copy button {
-  float: right; 
+  float: right;
 }

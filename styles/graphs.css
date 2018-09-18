@@ -12,7 +12,6 @@
   font-size: 0.2rem;
   font-weight: bold;
   fill: #939393;
-  /* display: block; */
 }
 
 .circle-graphs button,
@@ -34,8 +33,9 @@
 }
 
 #applicants-per-day {
-  padding: 10px;
+  padding: 1%;
   margin-top: 5%;
+  width: 35%;
 }
 
 #totals:hover,
@@ -44,7 +44,7 @@
 }
 
 .circle-graphs {
-  width: 50%;
+  width: 55%;
   display: flex;
   flex-direction: column;
   background: #edf2f6;
@@ -59,7 +59,7 @@
 }
 
 .bar-graph img {
-  width: 75%;
+  width: 80%;
 }
 
 /* circle graph styles taken from Medium article "How to code a responsive circular percentage chart with SVG and CSS." */

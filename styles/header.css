@@ -81,6 +81,36 @@ header {
   background-position: center;
 }
 
+#schedule-button {
+  background: url(../images/add-event.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#schedule-button:hover {
+  background: url(../images/add-event-white.svg);
+  background-color: #47a4f3;  
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#layout-button {
+  background: url(../images/grid-squares.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#layout-button:hover {
+  background: url(../images/grid-squares-white.svg);
+  background-color: #47a4f3;  
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .header-button img{
   height: 20px;
   width: 20px;
@@ -101,7 +131,8 @@ header {
 
 .job-posting button {
   background: #FFF;
-  height: 30px;
+  height: 40px;
+  width: 40px;
   border-radius: 50%;
   padding: 0 8px;
   border: 2px solid #c4ccd2;
@@ -112,16 +143,16 @@ header {
 }
 
 .job-posting button img {
-  height: 10px;
-  width: 10px;
+  height: 15px;
+  width: 15px;
 }
 
 #open {
   border-radius: 25px;
-  width: 60px;
+  width: 80px;
   font-size: 0.8rem;
   color: #9ca3ae;
-  padding: 0;
+  padding: 4%;
   display: flex;
 }
 
@@ -141,9 +172,8 @@ header {
 
 .job-posting-buttons {
   display: flex;
-  /* justify-self: flex-end; */
-  margin: 0 7% 0 0;
-  width: 250px;
+  margin-right: 5%;
+  width: 350px;
   justify-content: space-around;
 }
 
@@ -172,7 +202,6 @@ header {
 
 .job-links {
   display: flex;
-  justify-content: space-between;
   margin: 0;
   padding: 0 5%;
 }
@@ -182,6 +211,8 @@ header {
   border-bottom: 3px solid #FFF;
   font-weight: bold;
   color: #939393;
+  font-size: 0.8rem;
+  margin-right: 6%;
 }
 
 .job-posting-link:hover, .job-links .active {
