@@ -1,0 +1,64 @@
+@media only screen and (max-width: 950px) {
+  aside {
+    width: 150px;
+  }
+}
+
+@media only screen and (max-width: 850px) {
+  aside {
+    display: none;
+  }
+
+  .job-posting-link {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .bar-and-circle-graphs {
+    flex-direction: column;
+  }
+
+  .circle-graphs {
+    width: 100%;
+  }
+
+  .bar-graph {
+    width: 100%
+  }
+
+  .job-info {
+    padding: 0 4% 12% 4%;
+  }
+
+  .job-posting {
+    margin: 5% 0; 
+  }
+
+  .job-posting-buttons {
+    display: inline-block;
+    margin-right: 3%;
+  }
+
+  #open {
+    width: 100%;
+    padding-left: 30%;
+  }
+
+  .small-button {
+    margin: 5% 0 0 11%;
+  }
+
+  #totals {
+    padding: 1%;
+  }
+
+  .job-info {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .job-description-block {
+    margin-bottom: 8%;
+  }
+}

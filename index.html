@@ -11,12 +11,12 @@
   <link rel="stylesheet" href="styles/header.css">
   <link rel="stylesheet" href="styles/graphs.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="styles/media.css">
   <title>Newton Barley</title>
 </head>
 
 <body>
   <aside>
-    <!-- <div class="profile" aria-label="profile picture and username with dropdown menu"> -->
     <figure>
       <div class="img-profile" aria-label="profile image set by user"></div>
       </div>
@@ -24,7 +24,6 @@
         <p>Newton Barley</p>
         <div class="dropdown"></div>
     </figure>
-    <!-- </div> -->
     <hr>
     <ul>
       <span>Main</span>
@@ -86,20 +85,12 @@
         <img class="magnifier" src="images/magnifying-glass.svg">
         <input class="search-input-field" type="search" placeholder="Search for a job, task, or resume">
       </div>
-      <!-- <div class="add-user"> -->
       <button class="header-button active" id="add-user-button">
       </button>
-      <!-- </div> -->
-      <!-- <div class="schedule"> -->
-      <button class="header-button schedule-button">
-        <img src="images/add-event.svg" alt="">
+      <button class="header-button" id="schedule-button">
       </button>
-      <!-- </div> -->
-      <!-- <div class="layout"> -->
-      <button class="header-button layout-button">
-        <img src="images/grid-squares.svg" alt="">
+      <button class="header-button" id="layout-button">
       </button>
-      <!-- </div> -->
     </section>
     <section class="job-posting">
       <div class="job-posting-row">
@@ -107,13 +98,13 @@
         <article class="job-posting-buttons">
           <button id="open">
             <div id="green-dot"></div>OPEN</button>
-          <button class="bookmark">
+          <button class="bookmark small-button">
             <img src="images/bookmark.svg" alt="">
           </button>
-          <button class="edit">
+          <button class="edit small-button">
             <img src="images/pencil-edit-button.svg" alt="">
           </button>
-          <button class="trash">
+          <button class="trash small-button">
             <img src="images/waste-bin.svg" alt="">
           </button>
         </article>
@@ -220,8 +211,8 @@
             radical customers, responsible for keeping up-to-date on the various product shizzle; helping the bidness reduce
             customer service wait times while doing a back handspring and eating a ham sandwich</dd>
           <dt class="hiring-lead">HIRING LEAD</dt>
-          <dd>
-            <img src="tom-t" alt="" class="small-profile">Tom Tizzy</dd>
+          <dd class="hiring-lead-profile">
+            <img src="images/Dwight_Schrute.jpg" alt="" class="small-profile">Tom Tizzy</dd>
           <dt id="approved-salary">APPROVED SALARY</dt>
           <dd id="approved-salary-definition">$58,000</dd>
         </dl>

@@ -7,13 +7,13 @@
 body {
   display: grid;
   grid-template-areas: 
-    "aside header header header"
-    "aside header header header"
-    "aside header header header"
-    "aside main main main"
-    "aside main main main"
-    "aside main main main"
-    "aside main main main"
+    "aside header header"
+    "aside header header"
+    "aside header header"
+    "aside main main"
+    "aside main main"
+    "aside main main"
+    "aside main main"
 }
 
 button {
