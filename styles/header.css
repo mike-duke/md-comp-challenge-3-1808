@@ -213,6 +213,7 @@ header {
   padding: 3% 0;
   color: #939393;
   font-size: 0.8rem;
+  list-style: none;
 }
 
 .job-posting-link:hover, .job-links .active {
