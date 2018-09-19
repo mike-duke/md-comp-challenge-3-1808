@@ -61,7 +61,9 @@ main {
   border-radius: 50%;
   height: 40px;
   margin: 2%;
-  width: 40px;
+  width: 30px;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .job-description {
